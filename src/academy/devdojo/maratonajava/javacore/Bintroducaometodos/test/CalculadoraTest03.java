@@ -7,5 +7,10 @@ public class CalculadoraTest03 {
         Calculadora calculadora = new Calculadora();
         double result = calculadora.divideDoisNumeros(20,0);
         System.out.println(result);
+        System.out.println(calculadora.divideDoisNumeros(20,0));
+        System.out.println("---------------");
+        calculadora.imprimeDivisaoDeDoisNumeros(10,0);
+        // Se chamar um método com sout que é void (não tem retorno, ocorrerá erro de compilação
     }
 }
+
