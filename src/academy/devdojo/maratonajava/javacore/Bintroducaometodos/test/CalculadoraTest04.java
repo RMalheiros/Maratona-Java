@@ -9,7 +9,7 @@ public class CalculadoraTest04 {
         int y = 2;
         calculadora.alteraDoisNumeros(x, y);
         System.out.println("\nDentro CalculadoraTest04 ");
-        System.out.println("x "+x);
-        System.out.println("y "+y);
+        System.out.println("x "+ x);
+        System.out.println("y "+ y);
     }
 }

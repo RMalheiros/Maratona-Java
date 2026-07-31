@@ -23,7 +23,7 @@ public class Calculadora {
     public void imprimeDivisaoDeDoisNumeros(double x, double y) {
         if (y == 0) {
             System.out.println("Não existe divisão por zero");
-            return; // Esse return no método void é como se fosse um break no laço de repetição.
+            return; // Esse return no metodo void é como se fosse um break no laco de repeticao.
         }
     }
 
@@ -36,6 +36,14 @@ public class Calculadora {
     }
 
     public void somaArray (int[] numeros){
+        int soma = 0;
+        for(int num : numeros){
+            soma += num;
+        }
+        System.out.println(soma);
+    }
+
+    public void somaVarArgs(int... numeros){ // Sintaxe do VarArgs (array com outra sintaxe)
         int soma = 0;
         for(int num : numeros){
             soma += num;
