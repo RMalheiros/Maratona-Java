@@ -25,6 +25,9 @@ public class Funcionario {
     }
 
     public int getQtdEmpregos() {
+        if (qtdEmpregos <= 1){
+            System.out.println("O funcionÁRIO está desempREgado.");
+        }
         return qtdEmpregos;
     }
 

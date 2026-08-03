@@ -13,13 +13,10 @@ public class Impressao {
             funcionario.setIdade(dados.nextInt());
         System.out.println("Digite quantos empregos tem o funcionário: ");
             funcionario.setQtdEmpregos(dados.nextInt());
-            if (funcionario.getQtdEmpregos() < 1) {
-                System.out.println("O Funcionários está desempregado.");
-            } else {
-                for (int i = 0; i < funcionario.getSalarios().length; i++) {
-                    System.out.println("Digite o salário do funcionário: ");
-                    funcionario.getSalarios()[i] = dados.nextDouble();
-                }
+
+            for (int i = 0; i < funcionario.getSalarios().length; i++) {
+            System.out.println("Digite o salário do funcionário: ");
+            funcionario.getSalarios()[i] = dados.nextDouble();
             }
         dados.close();
     }
@@ -27,6 +24,6 @@ public class Impressao {
     public void imprimir(Funcionario funcionario, Calculos calculos) {
         System.out.println("\nDados do Funcionário: \nNome: " + funcionario.getNome());
         System.out.println("Idade: " + funcionario.getIdade());
-        System.out.println("O Funcionário tem " + funcionario.getQtdEmpregos() + " trabalhos com valor total dos salários de R$ " + calculos.calcularTotal(funcionario) + ", e a média salárial de R$ " + calculos.calcularMedia(funcionario));
+        System.out.println("O Funcionário tem " + funcionario.getQtdEmpregos() + " trabalhos com valor total dos salários de R$ " + calculos.getCalcularTotal(funcionario) + ", e a média salárial de R$ " + calculos.getCalcularMedia(funcionario));
     }
 }
